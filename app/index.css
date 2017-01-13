@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: rgba(188, 73, 215, 0.78);
+}
+
+#tagline {
+	margin-bottom: 0.2em;
+	padding: 0.3em;
+	color: white;
+	font-size: 5em;
+	text-align: center;
+	font-family: 'monospace';
+	font-weight: bolder;
+	letter-spacing: -5px;
+	text-shadow: 5px 8px 3px #333;
+}
+
+#app {
+	display: flex;
+	height: 100vh;
+}
+
+#app > * {
+	margin: 0.4em;
+	padding: 0.3em;
+	flex: 1;
+}
+
+#edit, #md {
+	background: transparent;
+	color: white;
+	word-wrap: break-word;
+	overflow: scroll;
+}
+
+#edit {
+	outline: none;
+	font-size: 3em;
+	border: 3px dashed green;
+	resize: none;
+}
+
+blockquote {
+  border-left: 10px solid #333;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #333;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+	color: #333;
+	font-size: 2em;
+  	display: inline;
+}
